@@ -82,7 +82,7 @@ namespace DoYouNeedSomeHelp
 
                     Visibility = Visibility.Visible;
 
-                    HelpText.Text = "I noticed you tried to run " + itemName + ". Would you like some help with that?";
+                    HelpText.Text = "I noticed that you tried to run " + itemName + ". Would you like some help with that?";
                 }));
             }
             catch (Exception)
