@@ -31,7 +31,8 @@ namespace DoYouNeedSomeHelp
             "svchost.exe",
             "OpenWith.exe",
             "dllhost.exe",
-            "explorer.exe"
+            "explorer.exe",
+            "WerFault.exe"
         };
 
         // POGGERS!
@@ -66,6 +67,7 @@ namespace DoYouNeedSomeHelp
 
                 // https://stackoverflow.com/questions/2633628/can-i-get-command-line-arguments-of-other-processes-from-net-c
                 file = j.Cast<ManagementBaseObject>().SingleOrDefault()?["CommandLine"]?.ToString();
+                
 
                 mProc.Kill();
 
