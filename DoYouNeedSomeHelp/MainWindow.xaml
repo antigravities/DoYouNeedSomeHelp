@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DoYouNeedSomeHelp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="139.347" Width="444.603"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
         
-    </Grid>
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Background="Transparent"
+        
+        ShowInTaskbar="False"
+        
+        Deactivated="Window_Deactivated"
+        >
+    <Canvas>
+        <Image HorizontalAlignment="Left" Height="117" Margin="22,10,0,0" VerticalAlignment="Top" Width="117" gif:ImageBehavior.AnimatedSource="clippy.gif" Name="Clippy">
+        </Image>
+        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Left" VerticalAlignment="Top" Height="117" Width="267" Background="#FFFFFFCA" Canvas.Left="167" Canvas.Top="10" Name="HelpText" FontSize="14"/>
+        <Button Name="ButtonYes" Content="Yes" Canvas.Left="167" Canvas.Top="96" Width="126" Height="31" FontSize="20" Click="ButtonYes_Click"/>
+        <Button Name="ButtonNo" Content="No" Canvas.Left="309" Canvas.Top="96" Width="126" Height="31" FontSize="20" Click="ButtonNo_Click" />
+
+    </Canvas>
 </Window>
